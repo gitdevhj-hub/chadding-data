@@ -142,5 +142,6 @@ API 주소가 기본값과 다르면 같은 화면의 Variables 탭에 `SCHOOL_A
 
 앱이 쓰는 유료 가능 API를 여기서 켜고 끈다. 앱 업데이트 없이 다음에 앱을 켤 때 반영된다.
 
+- `tmapWalkRoute.proxy`: 걸어서 가는 길 서버(Cloudflare Workers) 주소. 비어 있으면 앱 안 키로 TMAP에 직접 묻는다. (서버 코드는 notiforme 저장소 server/walk-proxy)
 - `tmapWalkRoute.enabled`: 안드로이드 내 차 찾기의 걸어서 가는 길(TMAP 보행자 경로). `false`면 곧은 점선 안내로 바뀐다.
 - 전체 사용량은 SK OPEN API 콘솔에서 보고, 무료 사용량이 거의 찼으면 `enabled`를 `false`로. TMAP이 "사용량 초과"로 답하면 앱이 스스로 그날 하루 쓰지 않는다.
