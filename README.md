@@ -137,3 +137,11 @@ API 주소가 기본값과 다르면 같은 화면의 Variables 탭에 `SCHOOL_A
 | 표준노드링크 | 국토교통부 · 국가교통정보센터 | 도로 구간 (카메라가 차와 같은 도로인지) | [its.go.kr/nodelink](https://www.its.go.kr/nodelink/nodelinkRef) |
 | 전국주차장정보표준데이터 | 지방자치단체 | 주차장 위치·이름·구분·요금·면수 | [공공데이터포털 검색](https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=%EC%A0%84%EA%B5%AD%EC%A3%BC%EC%B0%A8%EC%9E%A5%EC%A0%95%EB%B3%B4%ED%91%9C%EC%A4%80%EB%8D%B0%EC%9D%B4%ED%84%B0) |
 
+
+## 외부 API 스위치 (config.json)
+
+앱이 쓰는 유료 가능 API를 여기서 켜고 끈다. 앱 업데이트 없이 다음에 앱을 켤 때 반영된다.
+
+- `tmapWalkRoute.enabled`: 안드로이드 내 차 찾기의 걸어서 가는 길(TMAP 보행자 경로). `false`면 곧은 점선 안내로 바뀐다.
+- `tmapWalkRoute.perDeviceDaily`: 폰 한 대가 하루에 TMAP에 물어볼 수 있는 최대 횟수 (기본 40). 넘으면 그날은 곧은 점선.
+- 무료 사용량이 거의 찼으면 `enabled`를 `false`로. TMAP이 "사용량 초과"로 답하면 앱이 스스로 그날 하루 쓰지 않는다.
