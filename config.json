@@ -1,7 +1,6 @@
 {
   "_설명": "앱이 외부 유료 API를 쓸지 정하는 스위치. 앱을 켤 때 읽어요(인터넷이 안 되면 마지막 값). 고치면 앱 업데이트 없이 바로 반영돼요.",
   "tmapWalkRoute": {
-    "enabled": true,
-    "perDeviceDaily": 40
+    "enabled": true
   }
 }
