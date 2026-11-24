@@ -8,7 +8,7 @@
     "enabled": true
   },
   "weatherEffect": {
-    "enabled": false,
+    "enabled": true,
     "proxy": "https://notiforme-walk.gitdevhj.workers.dev",
     "test": ""
   }
