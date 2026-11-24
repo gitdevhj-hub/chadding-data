@@ -146,3 +146,6 @@ API 주소가 기본값과 다르면 같은 화면의 Variables 탭에 `SCHOOL_A
 - `tmapWalkRoute.enabled`: 안드로이드 내 차 찾기의 걸어서 가는 길(TMAP 보행자 경로). `false`면 곧은 점선 안내로 바뀐다.
 - 전체 사용량은 SK OPEN API 콘솔에서 보고, 무료 사용량이 거의 찼으면 `enabled`를 `false`로. TMAP이 "사용량 초과"로 답하면 앱이 스스로 그날 하루 쓰지 않는다.
 - `seasonalIcon.enabled`: 계절 앱 아이콘 (봄 3~5월·여름 6~8월·가을 9~11월·겨울 12~2월). `true`면 다음에 앱을 켤 때 그 계절 아이콘으로 바뀌고, `false`면 기본 아이콘으로 돌아간다. iPhone은 바뀔 때 "아이콘이 변경되었습니다" 창이 한 번 뜨고, 안드로이드는 앱을 내릴 때 바뀐다. 워치는 늘 기본. (앱 코드: notiforme 저장소 SeasonalIconService.swift · logic/SeasonalIcon.kt)
+- `weatherEffect.enabled`: 홈 화면 날씨 효과 (지금 위치에 눈·비가 오면 홈 지도에 눈·비가 내림). `false`면 아무도 안 보임. 사용자는 앱 설정에서 따로 끌 수 있다
+- `weatherEffect.proxy`: 날씨를 대신 물어 주는 서버 주소 (걸어서 가는 길 서버와 같은 Worker의 `/weather`. 기상청 키 KMA_KEY를 그 Worker에 넣어야 동작)
+- `weatherEffect.test`: 시험용. `"snow"`나 `"rain"`을 넣으면 날씨와 상관없이 그 효과가 나온다. 평소에는 `""`
