@@ -136,6 +136,7 @@ API 주소가 기본값과 다르면 같은 화면의 Variables 탭에 `SCHOOL_A
 | 전국어린이보호구역표준데이터 | 경찰청 · 교육부 (지방자치단체 제공) | 어린이보호구역 대상 시설 위치 | [data.go.kr/data/15012891](https://www.data.go.kr/data/15012891/standard.do) |
 | 표준노드링크 | 국토교통부 · 국가교통정보센터 | 도로 구간 (카메라가 차와 같은 도로인지) | [its.go.kr/nodelink](https://www.its.go.kr/nodelink/nodelinkRef) |
 | 전국주차장정보표준데이터 | 지방자치단체 | 주차장 위치·이름·구분·요금·면수 | [공공데이터포털 검색](https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=%EC%A0%84%EA%B5%AD%EC%A3%BC%EC%B0%A8%EC%9E%A5%EC%A0%95%EB%B3%B4%ED%91%9C%EC%A4%80%EB%8D%B0%EC%9D%B4%ED%84%B0) |
+| 기상청_단기예보 조회서비스 | 기상청 | 홈 화면 날씨 효과(눈·비). 서버(Cloudflare Worker)가 물어 보고 앱에는 눈·비·없음만 전함. 공공누리 제1유형(출처 표시) | [data.go.kr/data/15084084](https://www.data.go.kr/data/15084084/openapi.do) |
 
 
 ## 외부 API 스위치 (config.json)
