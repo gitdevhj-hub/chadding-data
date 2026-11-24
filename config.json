@@ -3,5 +3,8 @@
   "tmapWalkRoute": {
     "enabled": true,
     "proxy": "https://notiforme-walk.gitdevhj.workers.dev"
+  },
+  "seasonalIcon": {
+    "enabled": false
   }
 }
