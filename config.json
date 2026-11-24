@@ -24,6 +24,6 @@
     ],
     "enabled": false,
     "proxy": "https://notiforme-walk.gitdevhj.workers.dev",
-    "test": ""
+    "test": "leaf"
   }
 }
