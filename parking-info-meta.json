@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-11",
-  "bytes": 3111483,
+  "updatedAt": "2026-11-26",
+  "bytes": 3112378,
   "roadsBytes": 2167997,
   "counts": {
     "cctv": 14181,
     "schoolZones": 12157,
-    "parkingLots": 16096,
+    "parkingLots": 16112,
     "cameras": 25046
   }
 }
