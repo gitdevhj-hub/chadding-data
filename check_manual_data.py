@@ -73,7 +73,7 @@ if published and (TODAY - published).days > 365:
 
 하는 방법 (README "도로망: 표준노드링크"):
 1. [국가교통정보센터 표준노드링크](https://www.its.go.kr/nodelink/nodelinkRef)에서 맨 위 최신 NODELINKDATA.zip 받기
-2. [Release nodelink](https://github.com/gitdevhj-hub/notiforme-data/releases/tag/nodelink) → Edit → 예전 zip 지우고 새 zip 올리기 → Update release
+2. [Release nodelink](https://github.com/gitdevhj-hub/chadding-data/releases/tag/nodelink) → Edit → 예전 zip 지우고 새 zip 올리기 → Update release
 """)
 
 # 3. 인증키

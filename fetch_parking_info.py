@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-notiforme 주정차 정보 데이터(parking-info.json)를 공공데이터포털 오픈API로 받아 만든다.
+chadding 주정차 정보 데이터(parking-info.json)를 공공데이터포털 오픈API로 받아 만든다.
 
 GitHub Actions가 매달 자동으로 실행한다. (.github/workflows/update-data.yml)
 직접 실행할 때:

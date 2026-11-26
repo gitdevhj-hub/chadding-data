@@ -1,6 +1,6 @@
-# notiforme-data
+# chadding-data
 
-notiforme 앱의 "주정차 정보" 기능이 쓰는 공공데이터 파일을 만들고 보관하는 저장소예요.
+chadding 앱의 "주정차 정보" 기능이 쓰는 공공데이터 파일을 만들고 보관하는 저장소예요.
 
 - **parking-info.json**: 앱이 내려받는 파일
   (주정차 단속 CCTV, 어린이보호구역, 주차장 위치와 이름)
@@ -36,7 +36,7 @@ API 주소가 기본값과 다르면 같은 화면의 Variables 탭에 `SCHOOL_A
 국가교통정보센터는 해외 접속을 막아 두어서 Actions가 직접 받지 못해요. 한국에서 받아 Release에 올려 주세요.
 
 1. [국가교통정보센터 표준노드링크](https://www.its.go.kr/nodelink/nodelinkRef)에서 맨 위 최신 `NODELINKDATA.zip` 받기 (약 250MB, 압축 풀지 않음)
-2. [Releases](https://github.com/gitdevhj-hub/notiforme-data/releases)에서 `nodelink` 릴리스를 열고 Edit
+2. [Releases](https://github.com/gitdevhj-hub/chadding-data/releases)에서 `nodelink` 릴리스를 열고 Edit
    → 예전 zip은 지우고(휴지통 아이콘) 새 zip을 끌어다 놓기 → Update release
 3. 올리면 Actions가 자동으로 parking-roads.bin을 다시 만들어요. (`build_roads.py`)
 
@@ -143,10 +143,10 @@ API 주소가 기본값과 다르면 같은 화면의 Variables 탭에 `SCHOOL_A
 
 앱이 쓰는 유료 가능 API를 여기서 켜고 끈다. 앱 업데이트 없이 다음에 앱을 켤 때 반영된다.
 
-- `tmapWalkRoute.proxy`: 걸어서 가는 길 서버(Cloudflare Workers) 주소. 비어 있으면 앱 안 키로 TMAP에 직접 묻는다. (서버 코드는 notiforme 저장소 server/walk-proxy)
+- `tmapWalkRoute.proxy`: 걸어서 가는 길 서버(Cloudflare Workers) 주소. 비어 있으면 앱 안 키로 TMAP에 직접 묻는다. (서버 코드는 chadding 저장소 server/walk-proxy)
 - `tmapWalkRoute.enabled`: 안드로이드 내 차 찾기의 걸어서 가는 길(TMAP 보행자 경로). `false`면 곧은 점선 안내로 바뀐다.
 - 전체 사용량은 SK OPEN API 콘솔에서 보고, 무료 사용량이 거의 찼으면 `enabled`를 `false`로. TMAP이 "사용량 초과"로 답하면 앱이 스스로 그날 하루 쓰지 않는다.
-- `seasonalIcon.enabled`: 계절 앱 아이콘 (봄 3~5월·여름 6~8월·가을 9~11월·겨울 12~2월). `true`면 다음에 앱을 켤 때 그 계절 아이콘으로 바뀌고, `false`면 기본 아이콘으로 돌아간다. iPhone은 바뀔 때 "아이콘이 변경되었습니다" 창이 한 번 뜨고, 안드로이드는 앱을 내릴 때 바뀐다. 워치는 늘 기본. (앱 코드: notiforme 저장소 SeasonalIconService.swift · logic/SeasonalIcon.kt)
+- `seasonalIcon.enabled`: 계절 앱 아이콘 (봄 3~5월·여름 6~8월·가을 9~11월·겨울 12~2월). `true`면 다음에 앱을 켤 때 그 계절 아이콘으로 바뀌고, `false`면 기본 아이콘으로 돌아간다. iPhone은 바뀔 때 "아이콘이 변경되었습니다" 창이 한 번 뜨고, 안드로이드는 앱을 내릴 때 바뀐다. 워치는 늘 기본. (앱 코드: chadding 저장소 SeasonalIconService.swift · logic/SeasonalIcon.kt)
 - `weatherEffect.enabled`: 홈 화면 날씨 효과 (지금 위치에 눈·비가 오면 홈 지도에 눈·비가 내림). `false`면 아무도 안 보임. 사용자는 앱 설정에서 따로 끌 수 있다
 - `weatherEffect.proxy`: 날씨를 대신 물어 주는 서버 주소 (걸어서 가는 길 서버와 같은 Worker의 `/weather`. 기상청 키 KMA_KEY를 그 Worker에 넣어야 동작)
 - `weatherEffect.test`: 시험용. `"snow"`나 `"rain"`을 넣으면 날씨와 상관없이 그 효과가 나온다. 평소에는 `""`
