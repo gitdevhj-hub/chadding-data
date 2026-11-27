@@ -2,7 +2,7 @@
   "_설명": "앱이 쓰는 원격 스위치. 앱을 켤 때 읽어요(인터넷이 안 되면 마지막 값). 고치면 앱 업데이트 없이 반영돼요. 반영까지: GitHub 저장 지연 최대 약 5분 + 앱이 다시 받는 간격(출시 빌드 10분, 개발 빌드 1분, 앱을 완전히 종료했다 켜면 바로).",
   "tmapWalkRoute": {
     "enabled": true,
-    "proxy": "https://notiforme-walk.gitdevhj.workers.dev"
+    "proxy": "https://chadding-walk.gitdevhj.workers.dev"
   },
   "seasonalIcon": {
     "_설명": [
@@ -23,7 +23,7 @@
       "실제 날씨에서 눈으로 보는 것: 눈·비/눈·빗방울눈날림·눈날림 / 비로 보는 것: 비·빗방울. 같은 동네는 서버가 1시간 동안 같은 값을 써요"
     ],
     "enabled": true,
-    "proxy": "https://notiforme-walk.gitdevhj.workers.dev",
+    "proxy": "https://chadding-walk.gitdevhj.workers.dev",
     "test": ""
   }
 }
